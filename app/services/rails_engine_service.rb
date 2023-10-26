@@ -1,5 +1,9 @@
 class RailsEngineService
   
+  def merchant_search(search_term)
+    response = connection.get("/api/v1/merchants/find_all?name=#{search_term}")
+    JSON.parse(response.body, symbolize_names:true)[:data]
+  end
   def item_info(item_id)
     response = connection.get("/api/v1/items/#{item_id}")
     JSON.parse(response.body, symbolize_names:true)[:data]
