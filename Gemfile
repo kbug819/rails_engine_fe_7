@@ -54,6 +54,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'pry'
+  gem 'shoulda-matchers'
+
 end
 
 group :development do
@@ -65,5 +67,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  group :test do
+    gem 'vcr'
+    gem 'webmock'
+  end
 end
+gem 'faraday'
 
