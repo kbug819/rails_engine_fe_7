@@ -23,7 +23,7 @@ RSpec.describe 'merchants show page' do
         click_link 'Schroeder-Jerde'
         expect(current_path).to eq("/merchants/1")
         expect(page).to have_content('Schroeder-Jerde')
-        expect(page).to have_content('Merchant Items:')
+        expect(page).to have_content('Items:')
         expect(page).to have_link('Item Nemo Facere')
         expect(page).to have_link('Item Expedita Aliquam')
         expect(page).to have_link('Item Expedita Fuga')
