@@ -1,0 +1,7 @@
+<h1>Search by Merchant Name</h1>
+
+<%= form_with url: "/merchants", method: :get, local: true, turbo: false do |f| %>
+  <%= f.label "Merchant Name" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Search by Merchant" %>
+<% end %>
