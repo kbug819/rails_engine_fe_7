@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/find_all?name=Group
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1b172b1e0f99fd3869701019cc4004df"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 54ab887a-f5a9-4160-97a0-91df0bc1a480
+      X-Runtime:
+      - '0.048267'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.28, sql.active_record;dur=12.49,
+        instantiation.active_record;dur=0.28, process_action.action_controller;dur=26.45
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"74","type":"merchant","attributes":{"name":"Daugherty
+        Group"}},{"id":"37","type":"merchant","attributes":{"name":"Dibbert Group"}},{"id":"44","type":"merchant","attributes":{"name":"Gibson
+        Group"}},{"id":"68","type":"merchant","attributes":{"name":"Heaney Group"}},{"id":"81","type":"merchant","attributes":{"name":"Jewess
+        Group"}},{"id":"88","type":"merchant","attributes":{"name":"Kiehn Group"}},{"id":"12","type":"merchant","attributes":{"name":"Kozey
+        Group"}},{"id":"86","type":"merchant","attributes":{"name":"Marvin Group"}},{"id":"57","type":"merchant","attributes":{"name":"Parisian
+        Group"}},{"id":"71","type":"merchant","attributes":{"name":"Schulist Group"}},{"id":"35","type":"merchant","attributes":{"name":"Schuster
+        Group"}},{"id":"13","type":"merchant","attributes":{"name":"Tillman Group"}},{"id":"40","type":"merchant","attributes":{"name":"Wilderman
+        Group"}},{"id":"6","type":"merchant","attributes":{"name":"Williamson Group"}},{"id":"5","type":"merchant","attributes":{"name":"Williamson
+        Group"}}]}'
+  recorded_at: Thu, 26 Oct 2023 05:12:40 GMT
+recorded_with: VCR 6.2.0
